@@ -55,8 +55,8 @@ public class Summation {
         return reverse;
     }
     public static void main(String[] args){
-        String s1 = "25050505022100";
-        String s2 = "06205150505050";
-        System.out.println(sum(s1,s2));
+        String s1 = "250505050202020505051020202022100";
+        String s2 = "062051505050505050505050585055050055052";
+        System.out.print(s1 + " + " + s2 + " = " + sum(s1,s2));
     }
 }
