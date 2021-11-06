@@ -80,13 +80,13 @@ public class Multiplication {
     }
     public static String reverse(String s1){
         char r;
-        String reversedSum = "";
+        String reverse = "";
         for (int i=0; i<s1.length(); i++)
         {
             r= s1.charAt(i);
-            reversedSum= r+reversedSum;
+            reverse= r+reverse;
         }
-        return reversedSum;
+        return reverse;
     }
 
     public static String sumNumbers(String number1, String number2){
@@ -110,8 +110,8 @@ public class Multiplication {
         return reverse(sum);
     }
     public static void main(String[] args){
-        String s1 = "1234565464654464646654651321324684321354544";
-        String s2 = "21564651654654568798465215058548436505080316";
+        String s1 = "123456654684468168132032053568168464346";
+        String s2 = "2156465165465458797854163479841320351651";
         System.out.println(s1 + " * " + s2 + " = " + multiply(s1,s2));
 
     }
