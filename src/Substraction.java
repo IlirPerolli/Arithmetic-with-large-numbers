@@ -74,8 +74,8 @@ public class Substraction {
         return reverse;
     }
     public static void main(String[] args){
-        String s1 = "6";
-        String s2 = "5";
+        String s1 = "65050560650650684879879840030320321";
+        String s2 = "52321231534684613505606846879874231";
         System.out.print(s1 + " - " + s2 + " = " + sub(s1,s2));
 
     }

@@ -55,8 +55,8 @@ public class Summation {
         return reverse;
     }
     public static void main(String[] args){
-        String s1 = "063120";
-        String s2 = "007101";
+        String s1 = "165160320650649816081321651068163120";
+        String s2 = "6516809809849084196131135168109094091";
         System.out.print(s1 + " + " + s2 + " = " + sum(s1,s2));
     }
 }
