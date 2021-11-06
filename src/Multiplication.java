@@ -110,8 +110,8 @@ public class Multiplication {
         return reverse(sum);
     }
     public static void main(String[] args){
-        String s1 = "1234564";
-        String s2 = "21564651";
+        String s1 = "1234565464654464646654651321324684321354544";
+        String s2 = "21564651654654568798465215058548436505080316";
         System.out.println(s1 + " * " + s2 + " = " + multiply(s1,s2));
 
     }
