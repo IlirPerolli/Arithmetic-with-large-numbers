@@ -5,6 +5,7 @@ public class Substraction {
         String number1 = s1;
         String number2 = s2;
         String sub = "";
+        String sign = "+";
 
         if (s1.length() < s2.length()){
             for(int i=0; i<s2.length() - s1.length();i++){
@@ -21,7 +22,13 @@ public class Substraction {
             number2 = zeros;
         }
 
-        if ((number1.charAt(number1.length()-1) < number2.charAt(number2.length()-1)) || s1.length() < s2.length()) return "Nuk mund te zbriten pasi numri i pare eshte me i vogel se numri i dyte";
+        if ((number1.charAt(number1.length()-1) < number2.charAt(number2.length()-1)) || s1.length() < s2.length()){
+            String temp = "";
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
+            sign = "-";
+        }
 
         number1 = reverse(number1);
         number2 = reverse(number2);
@@ -50,7 +57,11 @@ public class Substraction {
             }
             sub += substractedNumbers;
         }
-        return reverse(sub);
+        sub = reverse(sub);
+        if (sign.equals("-")){
+            sub = sign + sub;
+        }
+        return sub;
     }
     public static String reverse(String s1){
         char r;
@@ -63,8 +74,8 @@ public class Substraction {
         return reverse;
     }
     public static void main(String[] args){
-        String s1 = "515353320500510505052020501080808080584884185151212";
-        String s2 = "41505050505445417818505051002022005050700708080820";
+        String s1 = "6";
+        String s2 = "5";
         System.out.print(s1 + " - " + s2 + " = " + sub(s1,s2));
 
     }
