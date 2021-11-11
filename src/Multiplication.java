@@ -1,3 +1,4 @@
+
 public class Multiplication {
     public static String multiply(String s1, String s2){
 
@@ -63,8 +64,9 @@ public class Multiplication {
         }
 
         for (int i=0; i<multiply.length; i++){
-            System.out.println(multiply[i]);
-        }
+
+                System.out.println(multiply[i]);
+            }
 
         return multiplyAcc;
     }
@@ -88,7 +90,6 @@ public class Multiplication {
         }
         return reverse;
     }
-
     public static String sumNumbers(String number1, String number2){
         int reminder = 0;
 
@@ -110,8 +111,8 @@ public class Multiplication {
         return reverse(sum);
     }
     public static void main(String[] args){
-        String s1 = "123456654684468168132032053568168464346";
-        String s2 = "2156465165465458797854163479841320351651";
+        String s1 = "116516165161561651651651111111654654687916515616116168486466191";
+        String s2 = "1561561981098091879879165148604986497496161023054987984313211";
         System.out.println(s1 + " * " + s2 + " = " + multiply(s1,s2));
 
     }
